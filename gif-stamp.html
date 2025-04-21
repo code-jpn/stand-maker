@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>スタンプメーカー</title>
+    <link rel="stylesheet" href="gif-stamp.css">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon*">
+    <link rel="apple-touch-icon" href="apple-touch-icon-180x180.png">
+    <link rel="icon" type="image/png" href="android-chrome-192x192.png">
+</head>
+<body>
+    <!--header-->
+    <div id="header">Gifスタンプメーカー</div>
+    <!--ボタン-->
+    <label for="background" class="button" id="">背景</label>
+    <label class="button"><input type="file" style="display: none;">画像追加</label>
+    <div class="button" id="">文字</div>
+    <div class="button" id="preview-button">preview</div>
+    <div class="button" id="download">ダウンロード</div>
+    <br><br>
+    <!--入力-->
+    <textarea id="textarea" placeholder="ここに入力.."></textarea>
+    <!--出力-->
+    <div id="preview">
+        <input type="color" id="background" value="#fff000">
+        <div id="text"></div>
+    </div>
+    <script src="gif-stamp.js"></script>
+</body>
+</html>
